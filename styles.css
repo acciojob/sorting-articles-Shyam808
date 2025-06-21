@@ -1,23 +1,22 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 2rem;
-  background-color: #f0f0f0;
-}
-
-h1 {
-  text-align: center;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 #band {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 50px auto;
+  padding: 30px;
+  width: 300px;
+  list-style: square;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
-#band li {
-  background: white;
-  padding: 0.5rem 1rem;
-  margin: 0.2rem 0;
-  border-radius: 4px;
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
 }
