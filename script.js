@@ -5,19 +5,19 @@ const bands = [
   'Anywhere But Here', 'An Old Dog'
 ];
 
-// Helper function to strip articles
+// Helper function to remove 'a', 'an', 'the' from beginning
 function stripArticle(bandName) {
   return bandName.replace(/^(a |an |the )/i, '').trim();
 }
 
-// Sort ignoring "a", "an", "the"
+// Sort ignoring articles
 const sortedBands = bands.sort((a, b) => {
   const bandA = stripArticle(a).toLowerCase();
   const bandB = stripArticle(b).toLowerCase();
   return bandA.localeCompare(bandB);
 });
 
-// Populate <ul>
+// Populate the <ul> element
 const ul = document.getElementById('band');
 sortedBands.forEach(band => {
   const li = document.createElement('li');
